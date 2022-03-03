@@ -1,172 +1,63 @@
 <html lang="en">
 <head>
-    <title>Feng Shui and Environmental Design</title>
+    <title>Orchestra, Deconstructed</title>
     <link rel="stylesheet" href="style.css">
     <script src="logic.js"></script>
 </head>
 <body>
     <div class="nav" >
     <p onclick="about()"><span id = "about1" class="active">about</span></p>
-    <p onclick="aboutfengshui()"><span id ="aboutfengshui1">about <i>feng shui</i></span></p>
-    <p onclick="yingyang()"><span id ="yingyang1">principle 1: <i>yin & yang</i></span></p>
-    <p onclick="chi()"><span id ="chi1">principle 2: <i>chi</i> </span></p>
-    <p onclick="fiveelements()"><span id ="fiveelements1" >principle 3: five elements </span></p>
-    <p onclick="applied()"><span id ="applied1" > applied to site selection </span></p>
-    <p onclick="casestudy()"><span id ="casestudy1"> case study: workspace6 </span></p>
-    <p onclick="bibliography()"><span id ="bibliography1"> bibliography </span></p>
+    <p onclick="artiststatement()"><span id ="artiststatement1">artist's statement </span></p>
     </div>
 
     <div class = "contentbox" style ="display: block" >
         <div id ="about" >
-            <h1>About This Project</h1>
-            <p>This is a final project for ENVS1400: Sustainable Design in the Built Environment, taught by
-                professor Kurt Teichert at Brown University. In this class, students learn the methods of
-                reducing the environemntal impact of the built environment (think buildings, houses, apartments, etc.). </p>
-            <p>While learning about the contents of this class, and in particular the very
-            scientific methods of calculating solar gain, heat loss coefficients, etc. I couldn't
-            help noticing how, in the end, the clean energy recommendations created through these methods
-            are very similar to the unsolicited remarks by my grandmother on the buildings of Chicago
-            every time she visited from China.</p>
-            <p>Unlike the numbers and scientific methods used in this course, my grandmother
-            would always explain her opinions through <i>Feng Shui</i>. Any building facing somewhere
-            other than South is bad. Trees are good depending on where they're placed. Furniture must
-            be arranged in a particular way. I'd always assumed it to be old people superstition
-            until I heard eeriely similar suggestions in this course, explained through a much more
-            academic and Western lens. </p>
-            <p>Growing up in the United States, I'd always disregarded traditional Chinese
-                art forms and beliefs as superstition and outdated. Throuhgout the course of this class,
-                I'd come to respect the wisdom of <i>Feng Shui</i> in particular, even if
-                it does not completely correlate with what is taught in Western societies as scientific or "advanced".
-                Through this project, I hope to better understand <i>Feng Shui</i> and how it
-            applies to the built environment and creating a more sustainable future, and I hope you do as well!</p>
-
-        </div>
-
-
-        <div id ="aboutfengshui" style ="display: none">
-            <h1><i>Feng Shui</i>: a general overview</h1>
-            <p><i>Feng Shui</i>, translated literally as “wind” and “water”,
-                is rooted in the Chinese philosophy of harmonious coexistence between humans and nature.
-                While the philosophy of <i>Feng Shui</i> itself goes beyond environmental design,
-                there are many principles we can learn from Feng Shui to better design for the
-                built environment. In this project, I will be exploring 3 principles of
-                <i>Feng Shui</i> to understand their correlation to sustainable design principles.
-                Note: <i>Feng Shui</i> is a deeply complex art and I’m barely scratching the surface here.
-                Many of my explanations are geared towards the environmental built environment perspective,
-                which may veer from the traditional explanations of <i>Feng Shui</i>, but hopefully this can help you get
-                a better sense of the relationships between <i>Feng Shui</i>
-                and environmental design!
-            </p>
-            <img src="./photos/fenshui.jpeg" alt="traditional chinese painting of lotus flowers and fish">
-            <p>In essense, while they are very different things, we can already find correlations of
-            the Western science of Green Design with <i>Feng Shui</i>. <i>Feng Shui</i> seeks to find the balance
-            between Human, Earth (nature), and the Universe, while Green Design is centered on designing with
-            human, environmental, and social context in mind. Even though the means and societal views of
-            Feng Shui and Green Design are very different, they are actually very similar in essence, and
-            are working towards the same values. </p>
-            <img src="./photos/greendesign.png" alt="venn diagram of green design, which is a combination of
-social context, environment,and human. second venn diagram of feng shui, which is a combination of universe, earth, and human">
-
-        </div>
-
-        <div id ="yingyang" style ="display: none">
-            <h1><i>Yin Yang</i>: a general overview</h1>
-            <p>Translated literally, <i>Yin Yang</i> means "darkness" and "light".
-                In this principle of <i>Feng Shui</i>, everything must be balanced between Yin (darkness) and Yang (light).
-            The concept of balance is the main pillar of this concept, where "darkness" and "light"
-            can be meant literally in terms of aesthetic color, but also more metaphorical ideas such as the sun and the moon, hot and cold, etc. </p>
-            <p>The concept of <i>Yin Yang</i> can be reflected in environmental design through finding
-            balance between the natural and the built environment, the contrasts of heating and cooling when designing
-            for human comfort, and more.</p>
-            <img src="./photos/yinyang.png" alt="Yin Yang symbol with examples of Yin and Yang objects">
-        </div>
-
-        <div id ="chi" style ="display: none">
-            <h1><i>Chi</i>: a general overview</h1>
-            <p><i>Chi</i> (or <i>Qi</i>), translated literatly as "air" but usually understood as "energy flow",
-                exists in every aspect of life, and, on Earth,
-                it is carried by wind and water (reminder that <i>Feng Shui</i> translates to wind and water).
-                <i>Feng Shui</i> designs in the built environment are aimed at a balance and harmonious environments
-                that can produce an ample amount of good <i>Chi</i> and filter out the bad <i>Chi</i>.
-
-            </p>
-            <p> While <i>Chi</i> is not limited to wind,
-                the mindfulness of these principles mirror that of
-                finding the balance between ventilation and insulation in
-                the built environment in environmental design.
-            </p>
-            <img src="./photos/Qi.jpeg" alt="Traditional Chinese calligraphy of the character Chi">
-
-        </div>
-
-        <div id ="fiveelements" style ="display: none">
-            <h1>The Five Elements: a general overview</h1>
-            <p>According to Feng Shui, everything in the world is part of the five elements: fire, earth, metal, water, and wood.
-                These elements form productive and destructive cycles and are seen through process and change. </p>
-            <p>The changing and cyclical nature of the Five elements are similar to the concepts around circular design, reuse, and the “cradle to cradle” concepts in environmental design.</p>
-            </p>
-            <img src="./photos/fiveelements.png" alt="the creative and destructive cycles of the five elements">
-
-        </div>
-
-        <div id ="applied" style ="display: none">
-            <h1>Appling <i>Feng Shui</i> to Site Selection</h1>
-            <p>If we apply the principles of <i>Yin Yang</i>, <i>Chi</i>, and the five elements, we can
-                pick an ideal site for a building to minimize environmental impact.
-                A favorable site should have a balance between <i>Yin</i> and <i>Yang</i>. For example, surrounding hills
-                (<i>Yin</i>) and a meandering river (<i>Yang</i>) suggest an ideal location. The consideration of <i>Chi</i> points to South
-                being the best direction for a building to face.
-                This enables the structure to use sunlight and block the winds from the north.</p>
-            <p>From a built environment stand point, this site selection is also ideal. Having hills minimizes abrasive winds
-            during the winter to lower heating costs, while being close to water can allow more localized water use. Meanwhile, a
-            South facing building can maximize solar gain and create an excellent form of heating and passive lighting,
-            especially when paired with windows and shades to allow for customization.</p>
-            <img src="./photos/site.png" alt="Ideal patterns between building & nature ">
-        </div>
-
-        <div id ="casestudy" style ="display: none">
-            <h1>Case Study: Workspace6</h1>
-            <p>When applied to a well designed building in terms of environmental impact, they also tend to
-                use good <i>Feng Shui</i> principles as well.For example, in the case of Workplace6, an office building
-                in Sydney. It is the first commercial development to achieve a 6 star Green Star rating for design in the
-                New South Wales region of Australia. It is designed to reduce greenhouse emissions by 70% and cut
-                drinking water consumption by almost 90% compared to an average existing office building. It
-                employs sustainable design tactics such as: </p>
+            <h1>Orchestra, Deconstructed</h1>
+            <p>A Brown University Music Department Honors Thesis project by Xinru Li. Advised by Professor Butch Rovan and Professor Mark Seto. </p>
+            <p>Exhibit times: Thursday, March 24, and Friday, March 25. 12pm - 8pm. </p>
+            <p>Exhibit Location: Fishman Studio. Granoff Center for the Creative Arts. 154 Angell St, Providence, RI 02906</p>
+            <p>Link to Facebook event (coming soon) </p>
+            <p>Featured Works </p>
             <ul>
-                <li>Uses 25% Green Power drawn from wind and solar sources</li>
-                <li>Contains roof mounted solar panels to heat the building’s hot water supply </li>
-                <li>Contains a black water recycling system that will treat sewage on-site </li>
-                <li>Built using recycled materials</li>
-                <li>Maximizes natural light with central atrium and optimize indoor environment quality through the use of chilled beam technology
-                </li>
-                <li>Maximizes window openings overlooking Sydney city and harbour for ventilation
-                </li>
-                <li>Uses a high technology facade and sun shading devices to reduce heat load on the building.
-                </li>
+                <li> <i>Abendstern</i> by Lauren Bernofsky</li>
+                <li> <i>Starburst</i> by Jessie Montgomery</li>
+                <li> "Coquetos" from <i>Leyendas: An Andean Walkabout </i> by Gabriela Lena Frank</li>
+
             </ul>
-            <p>After the application of these environmental design strategies, the design automatically fit many principles
-                of <i>Feng Shui</i> as well. For example, out of the principles of <i>Yin Yang</i>, <i>Chi</i>, and the five elements, we can see that: </p>
-            <p><b><i>Yin Yang</i>:</b> Open central atrium similar to the traditional courtyard houses in Beijing that provided the balance between natural and built environment, <i>Yin</i> and <i>Yang</i> harmony
-            </p>
-            <p>
-                <b><i>Chi</i>:</b> Connecting interior spaces to exterior through natural light from windows and central atrium, maximized external view to Sydney harbour, and greater fresh air supply
-            </p>
-            <p>
-                <b>Five Elements:</b> Usage of onsite water/energy treatment & recycled materials
-            </p>
-                <img src="./photos/workplace6.png" alt="the creative and destructive cycles of the five elements">
+            <p>Featured Musicians </p>
+            <ul>
+                <li>Max Pitchon, flute </li>
+                <li>Grace Samaha, flute </li>
+                <li>Javier Nino-Sears, clarinet </li>
+                <li>Jason Huang, clarinet </li>
+                <li>Maya Taylor, violin </li>
+                <li>Rohun Rajpal, violin </li>
+                <li>Kyoko Saito, violin </li>
+                <li>Owen Lockwood, violin </li>
+                <li>Bryan Huang, violin </li>
+                <li>Julie Karam, violin </li>
+                <li>Arman Deendar, viola </li>
+                <li>Chloe Kim, viola </li>
+                <li>Annie Wu, viola </li>
+                <li>Sedong Hwang, cello </li>
+                <li>Aaron Gruen, cello </li>
+                <li>Camille Donoho, bass </li>
+                <li>Susan Hasegawa, piano </li>
+            </ul>
         </div>
 
-        <div id ="bibliography" style ="display: none">
-            <h1>Bibliography</h1>
-            <p>Chen, B. X. and Nakama, Y. : A summary of research history on Chinese Feng-shui and application of Feng-shui principles to environmental issues Kyusyu J. For. Res. 57 : 297－301，2004 </p>
-            <p>Xu, Jun (2003). A Framework for Site Analysis with Emphasis on Feng Shui and Contemporary Environmental Design Principles  [Doctoral dissertation,  Virginia Tech]. http://hdl.handle.net/10919/29291 </p>
-            <p>E. Erdogan, & H. A. Erdogan. (2014). FengShui Paradigm as Philosophy of Sustainable Design. https://doi.org/10.5281/zenodo.1097022 </p>
-            <p>Mak, M.Y., & Ge, J. (2010). Sustainable design and feng shui: a case study of an office building in Sydney. https://www.irbnet.de/daten/iconda/CIB_DC24655.pdf </p>
+
+        <div id ="artiststatement" style ="display: none">
+            <h1>Orchestra Deconstructed Artist Statement</h1>
+            <p>will populate in a bit :///
+            </p>
+            <h1>Special thanks to</h1>
+            <p>Professor Butch Rovan, Primary Thesis Advisor, and Professor Mark Seto, Seconadary Thesis Advisor.
+            </p>
 
         </div>
 
-    <div class = "signature">built with ❤ by Xinru Li (December 2021)️</div>
+    <div class = "signature">built with ❤ by Xinru Li (March 2021)️</div>
 
     </div>
 </body>
